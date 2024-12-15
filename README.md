@@ -61,6 +61,8 @@ es = tf.keras.callbacks.EarlyStopping(patience=2, monitor="val_loss", restore_be
 
 history = lstm_model.fit(X_train_lstm, y_train, epochs=5, validation_data=(X_test_lstm, y_test), batch_size=32, callbacks=[es])
 ```
+### **Loss Curves**
+<img src="https://github.com/leovidith/LSTM-Intrusion-Detection/blob/main/images/image.png" width="600px">
 
 ## **Results**
 - **Accuracy:** 99.62%
